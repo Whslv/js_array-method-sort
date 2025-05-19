@@ -23,7 +23,7 @@ function applyCustomSort() {
       });
 
     for (let i = 0; i < this.length; i++) {
-      for (let j = 0; j < this.length; j++) {
+      for (let j = 0; j < this.length - 1; j++) {
         if (call(this[j], this[j + 1]) > 0) {
           const valueKeeper = this[j];
 
